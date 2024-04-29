@@ -1,5 +1,5 @@
 ---
-title: "My Storyboard at DACSS - tabs"
+title: "LA Crime Watch: Exploring patterns and trends"
 bibliography: testVisual.bib
 output: 
   flexdashboard::flex_dashboard
@@ -9,39 +9,43 @@ output:
 library(flexdashboard) # always
 ```
 
-## Sidebar {.sidebar}
+## Introduction {.sidebar}
 
 
-Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
+Welcome to our interactive dashboard, offering a comprehensive overview of crime patterns in Los Angeles, USA. Our data, sourced from the US Crime Department, spans from 2010 to 2016, providing valuable insights into the city's criminal landscape. Delve into various crime types, including theft, assault, and vandalism, and discover intriguing trends, such as the prevalence of stolen vehicles. Interestingly, individuals aged 30 to 40 years old are frequently involved in reported incidents. Stay informed and vigilant as you explore the dynamic visualizations presented here.
 
 ## Column {.tabset .tabset-fade}
 
 
-### Worst barplot
+### Top Crimes
 
 ```{r}
-readRDS("del1Draft.rds")
+readRDS("Plot1.rds")
 ```
 
 
-### Worst histogram
+### Demographic Distribution
 
 ```{r}
-readRDS("del2Draft.rds")
+readRDS("Plot2.rds")
 ```
 
-### Worst scatterplot
+### Crime-Prone Areas
 
 ```{r}
-readRDS("del3Draft.rds")
+readRDS("Plot3.rds")
 ```
 
-
-### Worst map
+### Temporal Crime Chart
 
 ```{r}
-readRDS("del4Draft.rds")
+readRDS("Plot3.2.rds")
 ```
 
 
-### References 
+### Choropleth Crime Map
+
+```{r}
+readRDS("Plot4.rds")
+```
+
